@@ -15,7 +15,7 @@ or:
 let mod = await import("https://deno.land/x/gpt_2_3_tokenizer@v0.0.2/mod.js");
 mod.encode("hello world"); // [258, 18798, 995]
 ```
-or to include it as a global variable in the browser:
+or to include it as a global variable (as if you were importing it with the old script tag style):
 ```html
 <script type=module>
   import tokenizer from "https://deno.land/x/gpt_2_3_tokenizer@v0.0.2/mod.js";
